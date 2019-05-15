@@ -1,0 +1,5 @@
+{
+  // Token for API Request. leave empty to skip saving/loading
+  "thingyToken": "",
+  "location": "frankfurt am main",
+}

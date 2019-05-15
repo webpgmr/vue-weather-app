@@ -1,9 +1,19 @@
-import Vue from 'vue'
-import App from './App.vue'
-import './registerServiceWorker'
+/**
+ * Created by andre on 10.12.15.
+ */
 
-Vue.config.productionTip = false
+// load vue object
+Vue = require('vue');
+// load vue plugins
+Vue.use(require('vue-resource'));
 
+// load main component
+var App = require('./phone.vue');
+
+// create vue instance and assign main component
 new Vue({
-  render: h => h(App)
-}).$mount('#app')
+    el: 'body',
+    components: {
+        app: App
+    }
+});
